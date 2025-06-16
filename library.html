@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankhla Consultants Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden ">
+     <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 py-3 lg:px-8 xl:px[8%] flex items-center justify-between z-50">
+       <a href="index.html" class="flex items-center gap-0">
+        <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
+        <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
+       </a>
+        <ul class="hidden md:flex font-semibold items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class=" text-blue-500"><a href="library.html">Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="flex items-center ms-28 gap-8">       
+         <a href="https://www.sankhlaconsultants.in/support/" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full 
+         ml-4 "> Client Login</a>
+
+         <button class="block md:hidden ml-3" onclick="openMenu()"> 
+             <img src="./images/menu-black.png" alt="" class="w-6">
+         </button>
+
+        </div>
+<!----------------------mobile menu--------------------->
+        <ul id="sideMenu"class="flex font-semibold md:hidden flex-col gap-4 py-20 px-10 fixed
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
+        bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
+
+          <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
+          </div>
+
+            <li><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+            <li class="text-blue-500"><a href="library.html" onclick="closeMenu()">Library</a></li>
+            <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            <br>
+            <br>
+            
+            <div class="align-middle text-center">
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
+                 <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+            </div>
+            <br>
+
+            <div class="flex flex-row align-middle gap-2 size-44">
+                <a href="https://wa.me/+917809900200"> <img src="./images/whatsapp.png"></a>
+                <a href="https://www.linkedin.com/company/31561478/admin/dashboard/"><img src="./images/linkedin.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559170146779"><img src="./images/facebook.png"></a>
+                <a href="https://g.co/kgs/DFtmv1e"><img src="./images/location.png"></a>
+                <a href="tel:+917809900"><img src="./images/call.png"></a>
+            </div>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------Our Services- --------------->
+<div class="w-full px-[12%] py-11  gap-10 scroll-mt-20">
+    <h4 class="text-center my-4 mb-2 text-lg">Our Services</h4>
+    <h2 class="text-center text-5xl">Experiences</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-2">
+         <div class="aspect-square bg-[url('./images/compliance.png')] bg-no-repeat 
+         bg-cover bg-center rounded-lg relative cursor-pointer group">
+           <div class="bg-white  group-hover:bg-lime-300 w-10/12 rounded-md absolute bottom-1 left-1/2 
+         -translate-x-1/2 py-3 px-5 flex items-center justify-between
+         duration-500 group-hover:bottom-3 border shadow-[2px_2px_0_#000]">
+             <div>
+                <h2 class="font-semibold"> Service 1</h2>
+                <p class="text-sm text-gray-700"> Explaination of service1</p>
+             </div>
+           </div>
+         </div>
+    </div>
+
+    <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700
+    border-[0.5px] border-gray-700 rounded-full  py-3 px-10 mx-auto my-20 hover:bg-[#a6ffa3]
+    duration-500">Show More
+        <img src="images/ArrowRightB.png" alt="" class="w-4">
+    </a>
+</div>
+<!----------Services Style2---------------------->
+<div class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg">What We offer</h4>
+    <h2 class="text-center text-5xl">Our Services</h2>
+    <p class= "text-center max-w-2xl mx-auto mt-5 mb-12">services1 13 3rfd f'   dds</p>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500">
+                <img src="./images/Icon-web.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">www.sankhlaco.com</h3>
+                <p class="text-sm text-gray-600 leading-5">WE PROVIDES THE SERVICES ALL OVER INDIA</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5">Read More...<img src="./images/ArrowRightB.png" class="w-4"></a>
+            </div>
+        </div>
+</div>
+<a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700
+    border-[0.5px] border-gray-700 rounded-full  py-3 px-10 mx-auto my-10 hover:bg-[#fcf4ff]
+    duration-500">Show More
+        <img src="images/ArrowRightB.png" alt="" class="w-4">
+    </a>
+</div>
+
+
+
+
+
+<!---------------footer------------------>
+    <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
+        <div class="w-max flex flex-col items-start gap-2 underline">
+            <img class="size-15" src="./images/logo3d.gif" alt="logo">
+           <a href="index.html">Home </a>
+           <a href="about.html">About</a>
+           <a href="about.html">Services</a>
+           <a href="team.html">Team</a>
+           <a href="library.html">Library</a>
+        </div>
+        <div class="w-max flex flex-col items-end gap-2 text-right">
+           <a href="https://g.co/kgs/FWXDesa" class="my-2">Office Address:<br> Plot No. 1984, Sec-45, Gurgaon-122003 </a>
+           <a href="tel:7809900200" >Phone: <br> +91 7809900200 <br>+124- 4211707, 4266706 </a>
+           <a href="mailto:info@sankhlaco.com" >Email: <br>info@sankhlaconsultants.com, <br>marketing@sankhlaco.com </a>
+        </div>
+    </div>
+
+
+    <div class=" border-gray-400 border-t-2 mx-[10%] py-3 text-center sm:flex items-center justify-between ">
+        <p class="py-3">Copy right 2025 Sankhla Consultants. All rights reserved</p>
+        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full 
+                     bg-purple-100    border-double px-5 py-2  ">Employee Login </a>
+        <ul class="py-3 flex items-center gap-9 justify-center sm:mt-0">
+            <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
+            <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
+            <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
+            <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
+
+        </ul>
+        
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankhla Consultants</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden ">
+
+    <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
+       <a href="index.html" class="flex items-center gap-0">
+        <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
+        <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
+       </a>
+        <ul class="hidden md:flex items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
+            <li class="text-blue-500"><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="flex items-center gap-8">
+         <button><img src="./images/moon.png" alt="" class="w-6"></button>
+       
+         <a href="https://www.sankhlaconsultants.in/support/" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full 
+         ml-4 "> Client Login</a>
+
+         <button class="block md:hidden ml-3" onclick="openMenu()"> 
+             <img src="./images/menu-black.png" alt="" class="w-6">
+         </button>
+
+        </div>
+<!----------------------mobile menu--------------------->
+        <ul id="sideMenu"class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
+        bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
+
+          <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./images/close-black.png" alt="" class="w-5
+            cursor-pointer">
+          </div>
+
+            <li class="text-blue-500"><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+            <li><a href="library.html" onclick="closeMenu()">Library</a></li>
+            <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+
+            <br>
+            <br>
+            
+            <div class="align-middle text-center">
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
+                 <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+            </div>
+            <br>
+
+            <div class="flex flex-row align-middle gap-2 size-44">
+                <a href="https://wa.me/+917809900200"> <img src="./images/whatsapp.png"></a>
+                <a href="https://www.linkedin.com/company/31561478/admin/dashboard/"><img src="./images/linkedin.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559170146779"><img src="./images/facebook.png"></a>
+                <a href="https://g.co/kgs/DFtmv1e"><img src="./images/location.png"></a>
+                <a href="tel:+917809900"><img src="./images/call.png"></a>
+            </div>
+        </ul>
+    </nav>
+<!---------------header------------------>
+<div class="w-11/12 max-w-3xl text-center mx-auto items-center pt-33 py-11 gap-4">
+    
+    <h1 class="text-3xl ">Our Core Team</h1>
+    <p class="">We offer knowledge-driven, tech-enabled Labour, Industrial, and Financial Compliance Solutions across India. Our domain-specific services are crafted to assist businesses with the necessary licenses, registrations, and 
+        compliance management under various domains.</p>     
+ </div>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-4 px-11 sm:mx-55 gap-2 my-2 text-center">
+            <div class="border  border-gray-400 rounded-lg px-2 py-6
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#efddf679] shadow-sm
+            hover:-translate-y-1 duration-500 justify-center">
+                <img src="./images/san.png" alt="" class="w-22 place-self-center rounded-full border">
+                <h3 class="text-xl ">M.S.Sankhla</h3>
+                <p class="text-xs">MPM, LL.B & DLL</p>
+                <p class="text-sm text-gray-600 leading-5 mt-6">Mr. M S Sankhla is the founder and CEO of Sankhla Corporate Services Private Limited, a well known HR Labour Compliance Outsourcing firm headquartered in Gurgaon He has corporate experience of 10 years in Indian industries at senior HR level in the year 1998.
+                     he started his own labour laws compliance firm namely M S Sankhla & Co.</p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-2 py-6
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#efddf672] shadow-sm
+            hover:-translate-y-1 duration-500 justify-center">
+                <img src="./images/male.png" alt="" class="w-22 place-self-center rounded-full border">
+                <h3 class="text-xl ">G.S.Thakur</h3>
+                <p class="text-xs">Dy. Labour Commissioner (Retd.)</p>
+                <p class="text-sm text-gray-600 leading-5 mt-6">Shri G S Thakur has retired as Labour Commissioner from Labour Department Ministry of Labour Employment, Govt of India, Gurgaon in the year 2012. His working experience is more than 36 years of his service in the Labour Department. He is associated with Sankhla
+                    Consultants for ten years now.</p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-2 py-6
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#efddf674] shadow-sm
+            hover:-translate-y-1 duration-500 justify-center">
+                <img src="./images/male.png" alt="" class="w-22 place-self-center rounded-full border">
+                <h3 class="text-xl ">Prem Singh Jamwal</h3>
+                <p class="text-xs">Assistant PF Commissioner (Retd.)</p>
+                <p class="text-sm text-gray-600 leading-5 mt-6">Shri P S Jamwal has retired as Assistant Commissioner from Regional Office, Employees’ Provident Fund Organization, Ministry of Labour Employment, Govt of India, Gurgaon in the year 2013. His working experience is more than 36 years of his service in the EPFO. 
+                    He is associated with Sankhla Consultants for five years now.</p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-2 py-6
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#efddf679] shadow-sm
+            hover:-translate-y-1 duration-500 justify-center">
+                <img src="./images/male.png" alt="" class="w-22 place-self-center rounded-full border">
+                <h3 class="text-xl ">Sanjay Singhal</h3>
+                <p class="text-xs">Chartered Accountant and IP.</p>
+                <p class="text-sm text-gray-600 leading-5 mt-6">Mr. Sanjay Singhal is a chartered accountant. He is credited with over 15 years of experience. He has substantially worked with Fortune 500 Companies, MNCs & Indian business houses, nationally and internationally renowned law and accounting firms. 
+                    He is associated with Sankhla Consultants for five years now.</p>
+            </div>
+</div>
+
+<!---------------footer------------------>
+    <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
+        <div class="w-max flex flex-col items-start gap-2 underline">
+            <img class="size-15" src="./images/logo3d.gif" alt="logo">
+           <a href="index.html">Home </a>
+           <a href="about.html">About</a>
+           <a href="about.html">Services</a>
+           <a href="team.html">Team</a>
+           <a href="library.html">Library</a>
+        </div>
+        <div class="w-max flex flex-col items-end gap-2 text-right">
+           <a href="https://g.co/kgs/FWXDesa" class="my-2">Office Address:<br> Plot No. 1984, Sec-45, Gurgaon-122003 </a>
+           <a href="tel:7809900200" >Phone: <br> +91 7809900200 <br>+124- 4211707, 4266706 </a>
+           <a href="mailto:info@sankhlaco.com" >Email: <br>info@sankhlaconsultants.com, <br>marketing@sankhlaco.com </a>
+        </div>
+    </div>
+
+
+    <div class=" border-gray-400 border-t-2 mx-[10%] py-3 text-center sm:flex items-center justify-between ">
+        <p class="py-3">Copy right 2025 Sankhla Consultants. All rights reserved</p>
+        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full shadow-sm
+                     bg-purple-100    border-double px-5 py-2  ">Employee Login </a>
+        <ul class="py-3 flex items-center gap-9 justify-center sm:mt-0">
+            <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
+            <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
+            <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
+            <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
+
+        </ul>
+        
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankhla Consultants Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden ">
+     <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full font-semibold fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
+       <a href="index.html" class="flex items-center gap-0">
+        <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
+        <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
+       </a>
+        <ul class="hidden md:flex items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="index.html">Home</a></li> 
+            <li class="text-blue-500"><a href="about.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="flex items-center ms-28 gap-8">
+       
+         <a href="https://www.sankhlaconsultants.in/support/" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full 
+         ml-4 "> Client Login</a>
+
+         <button class="block md:hidden ml-3" onclick="openMenu()"> 
+             <img src="./images/menu-black.png" alt="" class="w-6">
+         </button>
+
+        </div>
+<!----------------------mobile menu--------------------->
+        <ul id="sideMenu"class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
+        bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
+
+          <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./images/close-black.png" alt="" class="w-5
+            cursor-pointer">
+          </div>
+
+            <li><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li class="text-blue-500"><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+            <li><a href="library.html" onclick="closeMenu()">Library</a></li>
+            <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            <br>
+            <br>
+            
+            <div class="align-middle text-center">
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
+                 <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+            </div>
+            <br>
+
+            <div class="flex flex-row align-middle gap-2 size-44">
+                <a href="https://wa.me/+917809900200"> <img src="./images/whatsapp.png"></a>
+                <a href="https://www.linkedin.com/company/31561478/admin/dashboard/"><img src="./images/linkedin.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559170146779"><img src="./images/facebook.png"></a>
+                <a href="https://g.co/kgs/DFtmv1e"><img src="./images/location.png"></a>
+                <a href="tel:+917809900"><img src="./images/call.png"></a>
+            </div>
+
+        </ul>
+    </nav>
+
+<!----------------About us-------------->
+    <div class="flex w-full flex-col lg:flex-row gap-10  items-center px-[9%] py-22 sm:py-33 scroll-mt-20">
+        <div class="flex-1">
+            <h4 class="text-start mb-2 text-lg">Introduction</h4>
+            <h2 class="text-start text-5xl mb-4">About Us</h2>
+            <p class="mb-10 max-w-2xl">M.S. Sankhla & Co. was established in the year 2002. In the year 2011 Sarshan Corporate Services Pvt. Ltd. was incorporated as business entity. Subsequently in the year 2018 the entity was changed to Sarshan HR Solutions India Private Limited with the aim to outsource labour law consultancy services to corporate clients and to render labour and Industrial law including end to end compliance’s services. 
+                <br><br> We are present in the domain of Payroll Management and labour law compliance’s for the past many years. We offer end-to-end solutions including labour law consultancy, payroll processing, ESIC/EPF management, compliance audits, and litigation support. With a strong pan-India presence, we cater to clients across diverse sectors such as manufacturing, IT, FMCG, pharma, and logistics. 
+        </div>
+        <div class="max-w-max mx-auto relative">
+            <img src="./images/Compliances.jpg" alt="" class="w-99 rounded-3xl max-w-none">
+        </div>
+    </div>
+<!---------------Our Journey------------->
+<h2 class="text-center mb-2 text-3xl ont-semibold">Our Journey</h2>
+<div class="grid grid-cols-auto sm:grid-cols-3 sm:px-33 gap-3 px-11 py-2 text-center">
+        <div class="border border-gray-400 rounded-lg px-4 py-2 cursor-pointer hover:bg-[#faf3fd]
+            hover:-translate-y-1 duration-500 shadow-sm"> 
+                <h3 class="text-lg py-2 text-gray-700 ">Heritage of Trust & Expertise</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">Founded in 2002 (originally as M.S. Sankhla & Co., and later evolving through Sarshan Corporate Services to its current form), SANKHLA CORPORATE SERVICES PVT LTD has over two decades of deep domain experience in labour law consultancy and compliance across India. We specialize in labour law, payroll management, factory licensing, ESIC/EPF compliance, contract-labour regulation, and more</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-4 py-2 cursor-pointer hover:bg-[#faf1fd]
+            hover:-translate-y-1 duration-500 shadow-sm">
+                <h3 class="text-lg py-2 text-gray-700 ">Technology-Enabled Solutions</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">We offer knowledge-driven and tech-enabled solutions for Labour, Industrial, and Financial Compliance. Serving clients—from startups to large corporations—our services range from registrations and payroll processing to audits, inspections, litigation support, and documentation management</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-4 py-2 cursor-pointer hover:bg-[#faf1fd]
+            hover:-translate-y-1 duration-500 shadow-sm">
+                <h3 class="text-lg py-2 text-gray-700 ">Client-Centric & Values-Driven</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">Driven by strong ethics and a code of values, our professional team is agile, proactive, and personalized in approach. We aim for long-term partnerships and ensure timely, accurate, confidential, and high‑technology-based services with a human touch</p>
+        </div>
+</div>
+<!---------------SlideShow-container------------->
+
+
+ 
+ <!-- Slideshow container -->
+<div class="slideshow-container w-[90%] sm:w-[66%] mx-33 py-18 place-items-center text-center place-self-center ">
+
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/1.jpg" > 
+    <div class="numbertext">1 / 10</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img class="shadow-md" src="./images/slids/2.jpg" >
+    <div class="numbertext">2 / 10</div>
+  </div>
+
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/3.jpg">
+    <div class="numbertext">3 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/4.jpg">
+    <div class="numbertext">4 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/5.jpg">
+    <div class="numbertext">5 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/6.jpg">
+    <div class="numbertext">6 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/7.jpg">
+    <div class="numbertext">7 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/8.jpg">
+    <div class="numbertext">8 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/9.jpg">
+    <div class="numbertext">9 / 10</div>
+  </div>
+  <div class="mySlides fade ">
+    <img class="shadow-md" src="./images/slids/10.jpg">
+    <div class="numbertext">10 / 10</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev mx-5 hover:text-sky-500" onclick="plusSlides(-1)">Prev &#10094;</a>
+  <a class="next mx-5 hover:text-sky-500" onclick="plusSlides(1)">&#10095;Next</a>
+</div>
+ 
+
+
+
+
+<!---------------Mission Vision values------------->
+<h2 class="text-center my-5 pt-9 text-3xl mb-2 ">Sankhla Consultants</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:px-33 px-11 py-2 text-center">
+        <div class="border border-gray-400 rounded-lg px-4 py-2  cursor-pointer hover:bg-[#faf3fd]
+            hover:-translate-y-1 duration-500 shadow-sm">
+                <h3 class="text-lg py-2 text-gray-700 ">Our Mission</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">At M.S. Sankhla & Co., our mission is to provide exceptional labor law consultancy and end-to-end compliance services to our corporate clients. We are dedicated to facilitating their growth and success by delivering top-notch solutions that ensure they meet all regulatory requirements. Our commitment is to be a trusted partner in simplifying the complexities of labor and industrial law, enabling businesses to focus on what they do best.</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-4 py-2 cursor-pointer hover:bg-[#faf1fd]
+            hover:-translate-y-1 duration-500 shadow-sm">
+                <h3 class="text-lg py-2 text-gray-700 ">Our Values</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2 ">The Three core values into our Company <br> “Respect for individual”,<br>“The Best Customer Service” and <br> “The Pursuit of excellence”. </p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-4 py-2 cursor-pointer hover:bg-[#faf1fd]
+            hover:-translate-y-1 duration-500 shadow-sm">
+                <h3 class="text-lg py-2 text-gray-700 ">Our Vision</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">We envision a future where businesses can thrive without the burden of labor law and compliance challenges. Our vision is to be the leading provider of comprehensive labor law solutions. We aim to continually innovate and adapt to the evolving landscape of labor regulations, ensuring that our clients remain ahead of the curve. Our unwavering dedication is to be the backbone of corporate success through our expertise.</p>
+        </div>
+</div>
+<p class="text-center font-semibold underline my-11"><a href="#">Our Team</a></p>
+<!---------------footer------------------>
+<!---------------footer------------------>
+    <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
+        <div class="w-max flex flex-col items-start gap-2 underline">
+            <img class="size-15" src="./images/logo3d.gif" alt="logo">
+           <a href="index.html">Home </a>
+           <a href="about.html">About</a>
+           <a href="about.html">Services</a>
+           <a href="team.html">Team</a>
+           <a href="library.html">Library</a>
+        </div>
+        <div class="w-max flex flex-col items-end gap-2 text-right">
+           <a href="https://g.co/kgs/FWXDesa" class="my-2">Office Address:<br> Plot No. 1984, Sec-45, Gurgaon-122003 </a>
+           <a href="tel:7809900200" >Phone: <br> +91 7809900200 <br>+124- 4211707, 4266706 </a>
+           <a href="mailto:info@sankhlaco.com" >Email: <br>info@sankhlaconsultants.com, <br>marketing@sankhlaco.com </a>
+        </div>
+    </div>
+
+
+    <div class=" border-gray-400 border-t-2 mx-[10%] py-3 text-center sm:flex items-center justify-between ">
+        <p class="py-3">Copy right 2025 Sankhla Consultants. All rights reserved</p>
+        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full shadow-sm
+                     bg-purple-100    border-double px-5 py-2  ">Employee Login </a>
+        <ul class="py-3 flex items-center gap-9 justify-center sm:mt-0">
+            <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
+            <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
+            <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
+            <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
+
+        </ul>
+        
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

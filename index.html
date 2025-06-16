@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankhla Consultants</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden ">
+
+    <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
+       <a href="index.html" class="flex items-center gap-0">
+        <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
+        <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
+       </a>
+        <ul class="hidden md:flex font-semibold items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
+            <li class="text-blue-500"><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="flex items-center gap-8 ms-28">       
+         <a href="https://www.sankhlaconsultants.in/support/" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full 
+         ml-4 "> Client Login</a>
+
+         <button class="block md:hidden ml-3" onclick="openMenu()"> 
+             <img src="./images/menu-black.png" alt="" class="w-6">
+         </button>
+
+        </div>
+<!----------------------mobile menu--------------------->
+        <ul id="sideMenu"class="flex md:hidden font-semibold flex-col gap-4 py-20 px-10 fixed
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
+        bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
+
+          <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./images/close-black.png" alt="" class="w-5
+            cursor-pointer">
+          </div>
+
+            <li class="text-blue-500"><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+            <li><a href="library.html" onclick="closeMenu()">Library</a></li>
+            <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+
+            <br>
+            <br>
+            
+            <div class="align-middle text-center">
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
+                 <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+            </div>
+            <br>
+
+            <div class="flex flex-row align-middle gap-2 size-44">
+                <a href="https://wa.me/+917809900200"> <img src="./images/whatsapp.png"></a>
+                <a href="https://www.linkedin.com/company/31561478/admin/dashboard/"><img src="./images/linkedin.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559170146779"><img src="./images/facebook.png"></a>
+                <a href="https://g.co/kgs/DFtmv1e"><img src="./images/location.png"></a>
+                <a href="tel:+917809900"><img src="./images/call.png"></a>
+            </div>
+        </ul>
+    </nav>
+<!---------------header------------------>
+<div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <img src="./images/san.png" alt="" class="rounded-full w-33">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Welcome to Sankhla Corporate Services (P) Ltd.</h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Labour Laws Compliance Partner in India</h1>
+    <p class="max-w-2xl mx-auto">M.S. Sankhla & Co. is described as an aggressive, agile company made up of unique professionals. 
+        We provide following legal and compliance services.</p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-3">
+            <a href="tel:+917809900" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:font-semibold">Contact Us <img src="./images/call-white.png" alt="" class="w-5 "></a>
+            <a href="#contact" class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white hover:font-semibold"> Enquery <img src="./images/chat.png" alt="" class="w-5"></a>
+        </div>
+        </div>
+        
+<!----------------About us-------------->
+
+    <div class="flex w-full flex-col lg:flex-row gap-10 my-10 items-center px-[12%] py-8 scroll-mt-20">
+        <div class="max-w-max mx-auto relative">
+            <img src="./images/law.png" alt="" class="w-92 sm:w-99 rounded-3xl max-w-none">
+        </div>
+        <div class="flex flex-col">
+            <h4 class="text-start mb-2 text-lg">Introduction</h4>
+            <h2 class="text-start text-5xl mb-4">About Us</h2>
+            <p class="max-w-2xl">M.S. Sankhla & Co. was established in the year 2002. In the year 2011 Sarshan Corporate Services Pvt. Ltd. was incorporated as business entity. Subsequently in the year 2018 the entity was changed to Sarshan HR Solutions India Private Limited with the aim to outsource labour law consultancy services to corporate clients and to render labour and Industrial law including end to end compliance’s services. 
+                <br><br> We are present in the domain of Payroll Management and labour law compliance's for the past many years. We offer end-to-end solutions including labour law consultancy, payroll processing, ESIC/EPF management, compliance audits, and litigation support. 
+                With a strong pan-India presence, we cater to clients across diverse sectors 
+                such as manufacturing, IT, FMCG, pharma, and logistics. 
+                <a href="about.html" class="w-max flex items-center justify-center gap-2 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500
+        hover:shadow-[2px_2px_0_#000] border-[0.5px] rounded-full border-gray-400 
+        py-3 px-10 mx-auto my-5 ">Read More About Us <img src="images/ArrowRightB.png" alt="" class="w-4"></a>
+        </p>
+        </div>
+        
+    </div>
+<!-----------------Our Services -- What we offer-------------------->
+<div class="w-full px-[12%] scroll-mt-20 gap-9 my-9 py-20">
+    <h4 class="text-center mt-2 mb-2 text-lg">What We offer</h4>
+    <h2 class="text-center text-5xl py-5">Our Services</h2>
+    <p class="max-w-2xl mx-auto text-center mb-6" > M.S. Sankhla & Co. is described as an aggressive, agile company made up of unique professionals. We provide following legal and compliance services.</p>
+    <ul class="grid grid-cols-1 sm:grid-cols-3 gap-2 max-w-2x1 text-center">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6
+                    cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500
+                    hover:shadow-[4px_4px_0_#000]">
+                        <h3 class="my-2 font-semibold text-gray-700">Labour Laws Compliance</h3>
+                        <p class="text-gray-600 text-sm px-2 py-2">Sankhla Corporate offers end-to-end labour law compliance management services, focusing on the implementation of best practices_</p>
+                        <a href="services.html"> Read More </a>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6
+                    cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500
+                    hover:shadow-[4px_4px_0_#000]">
+                        <h3 class="my-2 font-semibold text-gray-700">Payroll Compliance Services</h3>
+                        <p class="text-gray-600 text-sm px-2 py-2">Our Payroll Compliance Services help close any gaps in compliance with employees’ remuneration rights and ensure payroll operations follow_</p>
+                        <a href="services.html"> Read More </a>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6
+                    cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500
+                    hover:shadow-[4px_4px_0_#000]">
+                        <h3 class="my-2 font-semibold text-gray-700">Compliance Audit Services</h3>
+                        <p class="text-gray-600 text-sm px-2 py-2">We provide knowledgeable consultation and advisory services to guide our clients in the proper direction and facilitate improved_</p>
+                        <a href="services.html"> Read More </a>
+                    </li>
+    </ul>
+    <a href="services.html" class="w-max flex items-center justify-center gap-2 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500
+        hover:shadow-[2px_2px_0_#000] border-[0.5px] rounded-full border-gray-400 
+        py-3 px-10 mx-auto my-7 ">Read More Services <img src="images/ArrowRightB.png" alt="" class="w-4">
+    </a>
+</div>
+
+<!------------------- Why Choose us-------------------->
+<div class="w-full px-[12%] scroll-mt-20 gap-3 py-2">
+    <h2 class="text-center text-5xl py-5">Why Choose Us</h2>   
+    <p class="max-w-2xl mx-auto text-center mb-6" > We tailor our solutions to your business needs, offering responsive support, timely updates, and clear guidance to ensure hassle-free compliance at every step.</p>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 py-2">
+        <div class="border border-gray-400 rounded-lg px-8 md:px-2 py-2 cursor-pointer hover:bg-[#f5e3fc]
+            hover:-translate-x-1 duration-500">
+                <h3 class="text-lg py-2 text-gray-700 ">End-to-End Compliance Solution</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">From audits and statutory register maintenance to litigation support, we offer comprehensive services under one roof—ensuring seamless compliance management.</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 md:px-2 py-2 cursor-pointer hover:bg-[#f5e3fc]
+            hover:-translate-x-1 duration-500">
+                <h3 class="text-lg py-2 text-gray-700 ">Expertise Since 1998</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">With over two decades of industry experience, we bring unmatched knowledge in labour laws, payroll compliance, and regulatory frameworks to help your business stay ahead.</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 md:px-2 py-2 cursor-pointer hover:bg-[#f5e3fc]
+            hover:-translate-x-1 duration-500">
+                <h3 class="text-lg py-2 text-gray-700 ">25+ Years of Experience</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">We have employees who hold substantial years of experience and knowledge in the labour law and HR. And it is their expertise which makes a professional enviroment.</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 md:px-2 py-2 cursor-pointer hover:bg-[#f5e3fc]
+            hover:-translate-x-1 duration-500">
+                <h3 class="text-lg py-2 text-gray-700 ">Trusted by Industry Leaders</h3>
+                <p class="text-sm text-gray-600 leading-5 py-2">Our long-standing partnerships with top corporates across sectors reflect our commitment to reliability, professionalism, and results that matter.</p>
+        </div>
+    </div>
+</div>
+<!-------------25+ years exp------------>
+    <div class="flex w-full flex-col lg:flex-row gap-10 my-10 items-center px-[12%] py-8 scroll-mt-20">  
+        <div class="flex-1">
+            <h2 class="text-start text-5xl mb-4">25+ Years Of Experiences</h2>
+            <ul style="list-style-type:disc; padding-left: 22px;">
+                <li>Pay Roll Services</li>
+                <li>ESIC & EPF Compliances </li>
+                <li>Audit & inspection handling </li>
+                <li>Payroll Compliance Services </li>
+                <li>Consultation and Audit Services </li>
+                <li>Contract Labour Regulation Services </li>
+                <li>Factory Compliance Management Services </li>
+                <li>Shop & Establishment License & Compliance Management Services etc. </li>
+                <a href="#" class="font-semibold underline"> Our Team </a>
+            </ul>
+        </div>
+        <div class="max-w-max mx-auto relative">
+            <img src="./images/Exp.png" alt="" class="w-92 sm:w-155 rounded-3xl max-w-none">
+        </div>
+    </div>
+
+<!----------Our Client Says---------------------->
+<div class="w-full px-[12%] py-10 scroll-mt-20">
+    <h2 class="text-center text-5xl">Our Clients Says</h2>
+    <p class= "text-center mt-5 mb-12">At Sankhla Corporate Services Pvt. Ltd., client satisfaction is at the heart of everything we do. Our commitment to accuracy, timely delivery, and in-depth regulatory expertise has earned the trust of businesses across industries. Whether it's labour law compliance, payroll management, or litigation support, we go the extra mile to ensure our clients receive reliable, customized solutions that keep them compliant and confident. 
+        Their continued trust is a reflection of our unwavering dedication to quality and service excellence.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 my-2">
+            <div class="border border-gray-400 rounded-lg px-4 py-4 shadow-md
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500 text-center">
+                <img src="./images/stars.png" alt="" class="w-44 mx-auto ">
+                <h2 class="text-lg text-gray-700 ">“Trusted Compliance Partner for Over a Decade”</h2>
+                <p class="text-sm text-gray-600 leading-5 mt-7">Sankhla Corporate Services has been our compliance partner for over 10 years. Their in-depth knowledge of labour laws, prompt support, and proactive approach have helped us avoid legal pitfalls and focus on our core business. They are not just service providers — they’re strategic advisors we can rely on.
+<br><br><b>- HR Head, Leading FMCG Company</b></p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-4 py-4 shadow-md
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500 text-center">
+                <img src="./images/stars.png" alt="" class="w-44 mx-auto ">
+                <h2 class="text-lg text-gray-700 ">“Efficient, Reliable & Extremely Professional”</h2>
+                <p class="text-sm text-gray-600 leading-5 mt-7">We engaged Sankhla Corporate Services for labour law audits and payroll compliance. Their team’s attention to detail and dedication to timelines impressed us. The entire process was transparent, smooth, and efficient. They’ve truly simplified compliance for our organization.
+                    <br><br><b>– Director, Manufacturing Firm in Gujarat</b></p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-4 py-4 shadow-md
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500 text-center">
+                <img src="./images/stars.png" alt="" class="w-44 mx-auto ">
+                <h2 class="text-lg text-gray-700 ">“Comprehensive Solutions Under One Roof”</h2>
+                <p class="text-sm text-gray-600 leading-5 mt-7">From statutory register maintenance to handling labour litigation support, Sankhla Corporate Services has been a one-stop solution for all our compliance needs. Their expertise, responsiveness, and ethical standards make them stand out in the industry.
+                      <br><br><b>– Compliance Manager, MNC IT Services Company</b></p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-4 py-4 shadow-md
+            hover:shadow-[4px_4py_0_#000] cursor-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500 text-center">
+                <img src="./images/stars.png" alt="" class="w-44 mx-auto ">
+                <h2 class="text-lg text-gray-700 ">“Payroll & ESIC/EPF Handling”</h2>
+                <p class="text-sm text-gray-600 leading-5 mt-7">"We struggled with managing payroll and statutory deductions until we partnered with Sankhla Corporate Services. Their expert handling of ESIC, EPF, and payroll compliance has brought immense clarity and accuracy to our processes. Their team is professional, responsive, and always one step ahead."
+                      <br><br><b>— Vikram Mehta, Director – HR, Crystal Logistics Ltd.
+</b></p>
+            </div>  
+        </div>
+</div>
+
+<!-----------------Contact Form----6445658a-ae05-4ed4-a106-df38a707904f-------------->
+<div class="px-[12%] py-11 md:py-22 scroll-mt-10 bg-[url('./images/header-bg-color.png')] 
+bg-no-repeat bg-[length:90%_auto] bg-center ">
+    <h4 class="text-center mb-2 text-lg">Connect With Us</h4>
+    <h2 class="text-center text-5xl">Get in Touch</h2>
+    <p class= "text-center max-w-2xl mx-auto mt-5 mb-12">We'd love to here from you!
+        If you have any questions, comments, or feedback, Please use the form below.</p>
+
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+          <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="hidden" name="access_key" value="6445658a-ae05-4ed4-a106-df38a707904f">
+            <input type="text" name="name" placeholder="Enter your name" required class="flex-1 p-3
+            outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+
+            <input type="email" name="email" placeholder="Enter your email" required class="flex-1 p-3
+            outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+          </div>
+          <textarea rows="6" name="message" placeholder="Enter your message" class="w-full p-4
+          outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6">
+        </textarea>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <button type="submit" class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
+           text-white rounded-full mx-auto hover:bg-[#615d62] hover:translate-y-1 duration-500
+        hover:shadow-[2px_2px_0_#000] border-[0.5px] border-gray-400 ">Submit Now
+             <img src="./images/arrow-right-white.png" alt="" class="w-4">
+        </button>
+        </form>
+</div>
+
+<!---------------footer------------------>
+    <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
+        <div class="w-max flex flex-col items-start gap-2 underline">
+            <img class="size-15" src="./images/logo3d.gif" alt="logo">
+           <a href="index.html">Home </a>
+           <a href="about.html">About</a>
+           <a href="about.html">Services</a>
+           <a href="team.html">Team</a>
+           <a href="library.html">Library</a>
+        </div>
+        <div class="w-max flex flex-col items-end gap-2 text-right">
+           <a href="https://g.co/kgs/FWXDesa" class="my-2">Office Address:<br> Plot No. 1984, Sec-45, Gurgaon-122003 </a>
+           <a href="tel:7809900200" >Phone: <br> +91 7809900200 <br>+124- 4211707, 4266706 </a>
+           <a href="mailto:info@sankhlaco.com" >Email: <br>info@sankhlaconsultants.com, <br>marketing@sankhlaco.com </a>
+        </div>
+    </div>
+
+
+    <div class=" border-gray-400 border-t-2 mx-[10%] py-3 text-center sm:flex items-center justify-between ">
+        <p class="py-3">Copy right © 2025 Sankhla Consultants. All rights reserved</p>
+        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full 
+                     bg-purple-100 border-double px-5 py-2  ">Employee Login </a>
+        <ul class="py-3 flex md:flex-row  items-center gap-9 justify-center sm:mt-0">
+            <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
+            <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
+            <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
+            <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
+
+        </ul>
+        
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

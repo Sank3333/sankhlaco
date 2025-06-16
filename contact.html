@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankhla Consultants Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden ">
+     <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 py-3 lg:px-8 xl:px[8%] flex items-center justify-between z-50">
+       <a href="index.html" class="flex items-center gap-0">
+        <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
+        <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
+       </a>
+        <ul class="hidden md:flex font-semibold items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li ><a href="library.html">Library</a></li>
+            <li class=" text-blue-500"><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="flex items-center gap-8 ms-28">       
+         <a href="https://www.sankhlaconsultants.in/support/" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full 
+         ml-4 "> Client Login</a>
+
+         <button class="block md:hidden ml-3" onclick="openMenu()"> 
+             <img src="./images/menu-black.png" alt="" class="w-6">
+         </button>
+
+        </div>
+<!----------------------mobile menu--------------------->
+        <ul id="sideMenu"class="flex md:hidden font-semibold flex-col gap-4 py-20 px-10 fixed font-semibold
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition text-blue-800
+        duration-500">
+
+          <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
+          </div>
+
+            <li><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+            <li><a href="library.html" onclick="closeMenu()">Library</a></li>
+            <li class="text-blue-500"><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            <br>
+            <br>
+            
+            <div class="align-middle text-center">
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
+                 <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+            </div>
+            <br>
+
+            <div class="flex flex-row align-middle gap-2 size-44">
+                <a href="https://wa.me/+917809900200"> <img src="./images/whatsapp.png"></a>
+                <a href="https://www.linkedin.com/company/31561478/admin/dashboard/"><img src="./images/linkedin.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559170146779"><img src="./images/facebook.png"></a>
+                <a href="https://g.co/kgs/DFtmv1e"><img src="./images/location.png"></a>
+                <a href="tel:+917809900"><img src="./images/call.png"></a>
+            </div>
+        </ul>
+    </nav>
+
+<!-----------------Contact Us------------------>
+<h2 class="text-center text-5xl pt-33">Contact Us</h2>
+
+<div class="grid sm:flex sm:flex-cols-2 px-[9%] my-11 py-5 scroll-mt-20 bg-[url('./images/header-bg-color.png')] 
+    bg-no-repeat bg-[length:90%_auto] bg-center  items-center gap-3 ">
+   <h1 class="text-center text-3xl sm:text-6xl sm:text-left">Would you like to make <br> “Sankhla Consultants” <br> your compliance partner? </h1>
+   <img class="rounded-xl my-2 sm:ml-11" src="./images/Hand.png" alt="img">
+</div>
+<!----Address------->
+<div class=" bg-[url('./images/header-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center py-9 my-6">
+<p class="text-3xl text-center mb-5">Office Address</p>
+
+ <div class="grid sm:grid-cols-3 px-[9%] my-2 py-1 text-center gap-5">
+    <div class="bg-slate-100 px-3 py-3 shadow-xl rounded-lg">
+    <p class="text-xl font-semibold ">Head Office</p>
+    <p class="text-l font-semibold">Gurgaon </p><br>
+    <p>Plot No. 1984, Sector 45, Gurgaon-122003, Haryana, India<br>
+        E-Mail:marketing@sankhlaco.com <br> Phone:+124-4211707,4266706</p>
+   </div>
+    
+   <div class="bg-slate-100 px-3 py-3 shadow-xl rounded-lg">
+    <p class="text-xl font-semibold">Branch Office</p>
+    <p class="text-l font-semibold">Noida </p><br>
+    <p>Chamber No. 195, District Court Gautam Buddha Nagar-201306, Noida <br>
+        E-Mail:info@sankhlaco.com <br> Phone:+919810414165</p>
+   </div>
+   <div class="bg-slate-100 px-3 py-3 shadow-xl rounded-lg">
+    <p class="text-xl font-semibold">Branch Office</p>
+    <p class="text-l font-semibold">Delhi </p><br>
+    <p>208, Mohan Complex, H-block Market, Ashok Vihar Phase -I, Delhi - 110052 <br>
+        E-Mail:info@sankhlaco.com <br> Phone:+919810414165</p>
+   </div>
+   
+ </div>
+</div>
+
+
+<!-----------------Contact Form----6445658a-ae05-4ed4-a106-df38a707904f-------------->
+<div class="px-[12%] py-11 md:py-22 scroll-mt-10 bg-[url('./images/header-bg-color.png')] 
+bg-no-repeat bg-[length:90%_auto] bg-center ">
+    <h4 class="text-center mb-2 text-lg">Connect With Us</h4>
+    <h2 class="text-center text-5xl">Get in Touch</h2>
+    <p class= "text-center max-w-2xl mx-auto mt-5 mb-12">We'd love to here from you!
+        If you have any questions, comments, or feedback, Please use the form below.</p>
+
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+          <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="hidden" name="access_key" value="6445658a-ae05-4ed4-a106-df38a707904f">
+            <input type="text" name="name" placeholder="Enter your name" required class="flex-1 p-3
+            outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+
+            <input type="email" name="email" placeholder="Enter your email" required class="flex-1 p-3
+            outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+          </div>
+          <textarea rows="6" name="message" placeholder="Enter your message" class="w-full p-4
+          outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6">
+        </textarea>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <button type="submit" class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
+           text-white rounded-full mx-auto hover:bg-[#615d62] hover:translate-y-1 duration-500
+        hover:shadow-[2px_2px_0_#000] border-[0.5px] border-gray-400 ">Submit Now
+             <img src="./images/arrow-right-white.png" alt="" class="w-4">
+        </button>
+        </form>
+</div>
+
+
+
+
+
+
+<!---------------footer----------6445658a-ae05-4ed4-a106-df38a707904f
+-------->
+<div class="mt-20">
+    <div class="text-center">
+        <img src="./images/logo.png" alt="" class="w-11 mx-auto mb-2">
+        <div class="w-max flex items-center gap-2 mx-auto">
+            <img src="./images/icons-send.png" alt="" class="w-6">
+            info@sankhlaco.com
+        </div>
+    </div>
+    <div class="text-center sm:flex items-start justify-between border-t-2
+    border-gray-400 mx-[10%] my-12 py-6">
+        <p>Copy right 2025 Sankhla Consultants. All rights reserved</p>
+        <ul class="flex items-center gap-9 justify-center mt-4 sm:mt-0">
+            <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
+            <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
+            <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
+        </ul>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
