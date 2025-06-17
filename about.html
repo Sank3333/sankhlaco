@@ -9,14 +9,14 @@
 </head>
 <body class="overflow-x-hidden bg-linear-to-r/longer from-indigo-50 to-teal-50">
 
-    <nav class="w-full font-semibold fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
+    <nav class="w-full font-semibold fixed px-5 lg:px-8 xl:px[8%] py-2 flex items-center justify-between z-50">
        <a href="index.html" class="flex items-center gap-0">
         <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
         <h1 class="sm:text-2xl text-base/10 text-sky-500">MS SANKHLA & CO.</h1>
        </a>
         <ul class="hidden md:flex items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
             <li><a href="index.html">Home</a></li> 
-            <li class="text-blue-500"><a href="about.html">About </a></li>
+            <li class="text-blue-500" ><a href="about.html">About </a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="library.html">Library</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -35,19 +35,19 @@
 <!----------------------mobile menu--------------------->
         <ul id="sideMenu"class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
         -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
-       bg-linear-to-tl from-green-50 via-purple-50 to-pink-50 inset-shadow-sm">
+       bg-linear-to-tl from-green-50 via-purple-100 to-blue-100 inset-shadow-sm">
 
           <div class="absolute right-6 top-6" onclick="closeMenu()">
             <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
           </div>
 
-            <li><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li ><a href="index.html" onclick="closeMenu()">Home</a></li> 
             <li class="text-blue-500"><a href="about.html" onclick="closeMenu()">About</a></li>
             <li><a href="services.html" onclick="closeMenu()">Services</a></li>
             <li><a href="library.html" onclick="closeMenu()">Library</a></li>
             <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
-            <li><a href="team.html">Team</a></li>
-        
+            <li <a href="team.html" onclick="closeMenu()">Team</a></li>
+            <br>
             <br>
             
             <div class="align-middle text-center">
@@ -67,9 +67,8 @@
             </div>
         </ul>
     </nav>
-
 <!----------------About us-------------->
-    <div class="flex w-full flex-col lg:flex-row gap-10  items-center px-[9%] py-22 sm:py-33 scroll-mt-20">
+    <div class="flex w-full flex-col lg:flex-row gap-10  items-center px-5 sm:px-[11%] py-22 sm:py-33 scroll-mt-20">
         <div class="flex-1">
             <h4 class="text-start mb-2 text-lg">Introduction</h4>
             <h2 class="text-start text-5xl mb-4">About Us</h2>
@@ -77,7 +76,7 @@
                 <br><br> We are present in the domain of Payroll Management and labour law compliance’s for the past many years. We offer end-to-end solutions including labour law consultancy, payroll processing, ESIC/EPF management, compliance audits, and litigation support. With a strong pan-India presence, we cater to clients across diverse sectors such as manufacturing, IT, FMCG, pharma, and logistics. 
         </div>
         <div class="max-w-max mx-auto relative">
-            <img src="./images/Compliances.jpg" alt="" class="w-88 sm:w-99 rounded-3xl max-w-none">
+            <img src="./images/Compliances.jpg" alt="" class="w-full sm:w-99 rounded-3xl max-w-none">
         </div>
     </div>
 <!---------------Our Journey------------->
@@ -180,9 +179,8 @@
 <p class="text-center font-semibold underline my-11"><a href="#">Our Team</a></p>
 
 <!---------------footer------------------>
-    <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
-        <div class="w-max flex flex-col items-start gap-2 underline">
-            <img class="size-15" src="./images/logo3d.gif" alt="logo">
+       <div class=" border-gray-400  border-t-2 sm:px-11 sm:mx-[10%] mx-[3%]  py-2 text-center mt-33 flex sm:flex items-center justify-between my-2 ">
+        <div class="w-max flex flex-col items-start gap-3 underline">
            <a href="index.html">Home </a>
            <a href="about.html">About</a>
            <a href="about.html">Services</a>
@@ -190,27 +188,23 @@
            <a href="library.html">Library</a>
         </div>
         <div class="w-max flex flex-col items-end gap-2 text-right">
-           <a href="https://g.co/kgs/FWXDesa" class="my-2">Office Address:<br> Plot No. 1984, Sec-45, Gurgaon-122003 </a>
+           <a href="https://g.co/kgs/FWXDesa" class="my-2">Office Address:<br> Plot No-1984, Sec-45, Gurgaon-122003 </a>
            <a href="tel:7809900200" >Phone: <br> +91 7809900200 <br>+124- 4211707, 4266706 </a>
            <a href="mailto:info@sankhlaco.com" >Email: <br>info@sankhlaconsultants.com, <br>marketing@sankhlaco.com </a>
         </div>
     </div>
 
-    <div class=" border-gray-400 border-t-2 mx-[10%] py-3 text-center sm:flex items-center justify-between ">
-        <p class="py-3">Copy right 2025 Sankhla Consultants. All rights reserved</p>
-        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full shadow-sm
-                     bg-purple-100    border-double px-5 py-2  hover:bg-pink-50">Employee Login </a>
-        <ul class="py-3 flex items-center gap-9 justify-center sm:mt-0">
+    <div class=" border-gray-400 border-t-2 sm:px-11 sm:mx-[10%] mx-[3%] py-3 text-center sm:flex items-center justify-between ">
+        <p class="py-3">Copy right © 2025 Sankhla Consultants. All rights reserved</p>
+        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full 
+                     bg-purple-100 border-double px-5 py-2 hover:bg-pink-50 ">Employee Login </a>
+        <ul class="py-3 flex md:flex-row  items-center gap-9 justify-center sm:mt-0">
             <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
             <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
             <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
             <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
-
-        </ul>
-        
+        </ul> 
     </div>
-
-
 
     <script src="./script.js"></script>
 </body>
