@@ -7,17 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./tailwind.config.js"></script>
 </head>
-<body class="overflow-x-hidden ">
-     <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
-        <img src="./images/header-bg-color.png" alt="" class="w-full">
-    </div>
+<body class="overflow-x-hidden bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">
+   
 
-    <nav class="w-full fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
+    <nav class="w-full font-semibold fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
        <a href="index.html" class="flex items-center gap-0">
         <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
         <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
        </a>
-        <ul class="hidden font-semibold md:flex items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul class="hidden md:flex items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
             <li><a href="index.html">Home</a></li> 
             <li class="text-blue-500"><a href="about.html">About </a></li>
             <li><a href="services.html">Services</a></li>
@@ -38,7 +36,7 @@
 <!----------------------mobile menu--------------------->
         <ul id="sideMenu"class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
         -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
-        bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
+        bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">
 
           <div class="absolute right-6 top-6" onclick="closeMenu()">
             <img src="./images/close-black.png" alt="" class="w-5
@@ -54,10 +52,10 @@
             <br>
             
             <div class="align-middle text-center">
-                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">Client Login </a>
                  <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
                  <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
-                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">Call Us Now! </a>
             </div>
             <br>
 
@@ -157,6 +155,10 @@
   <a class="prev mx-5 hover:text-sky-500" onclick="plusSlides(-1)">Prev &#10094;</a>
   <a class="next mx-5 hover:text-sky-500" onclick="plusSlides(1)">&#10095;Next</a>
 </div>
+ 
+
+
+
 
 <!---------------Mission Vision values------------->
 <h2 class="text-center my-5 pt-9 text-3xl mb-2 ">Sankhla Consultants</h2>
@@ -177,8 +179,8 @@
                 <p class="text-sm text-gray-600 leading-5 py-2">We envision a future where businesses can thrive without the burden of labor law and compliance challenges. Our vision is to be the leading provider of comprehensive labor law solutions. We aim to continually innovate and adapt to the evolving landscape of labor regulations, ensuring that our clients remain ahead of the curve. Our unwavering dedication is to be the backbone of corporate success through our expertise.</p>
         </div>
 </div>
-<p class="text-center font-semibold underline my-11"><a href="team.html">Our Team</a></p>
-    
+<p class="text-center font-semibold underline my-11"><a href="#">Our Team</a></p>
+
 <!---------------footer------------------>
     <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
         <div class="w-max flex flex-col items-start gap-2 underline">

@@ -7,11 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./tailwind.config.js"></script>
 </head>
-<body class="overflow-x-hidden ">
-
-    <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat h-screen">
-        <img src="./images/header-bg-color.png" alt="" class="w-full">
-    </div>
+<body class="overflow-x-hidden bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">
 
     <nav class="w-full fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
        <a href="index.html" class="flex items-center gap-0">
@@ -36,9 +32,9 @@
 
         </div>
 <!----------------------mobile menu--------------------->
-        <ul id="sideMenu"class="flex md:hidden font-semibold flex-col gap-4 py-20 px-10 fixed
+        <ul id="sideMenu"class="flex inset-shadow-sm md:hidden font-semibold flex-col gap-4 py-20 px-10 fixed
         -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
-        bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
+        bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">
 
           <div class="absolute right-6 top-6" onclick="closeMenu()">
             <img src="./images/close-black.png" alt="" class="w-5
@@ -55,10 +51,10 @@
             <br>
             
             <div class="align-middle text-center">
-                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100 ">Client Login </a>
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">Client Login </a>
                  <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
                  <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
-                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">Call Us Now! </a>
+                 <a href="tel:+917809900" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">Call Us Now! </a>
             </div>
             <br>
 
@@ -73,13 +69,13 @@
     </nav>
 <!---------------header------------------>
 <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-<!------    <img src="./images/san.png" alt="" class="rounded-full w-33">---->
+    <img src="./images/san.png" alt="" class="rounded-full w-33">
     <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Welcome to Sankhla Corporate Services (P) Ltd.</h3>
     <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Labour Laws Compliance Partner in India</h1>
     <p class="max-w-2xl mx-auto">M.S. Sankhla & Co. is described as an aggressive, agile company made up of unique professionals. 
         We provide following legal and compliance services.</p>
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-3">
-            <a href="tel:+917809900" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:font-semibold">Contact Us <img src="./images/call-white.png" alt="" class="w-5 "></a>
+            <a href="tel:+917809900200" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:font-semibold">Contact Us <img src="./images/call-white.png" alt="" class="w-5 "></a>
             <a href="#contact" class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white hover:font-semibold"> Enquery <img src="./images/chat.png" alt="" class="w-5"></a>
         </div>
         </div>
@@ -178,7 +174,7 @@
                 <li>Contract Labour Regulation Services </li>
                 <li>Factory Compliance Management Services </li>
                 <li>Shop & Establishment License & Compliance Management Services etc. </li>
-                <a href="team.html" class="font-semibold underline"> Our Team </a>
+                <a href="#" class="font-semibold underline"> Our Team </a>
             </ul>
         </div>
         <div class="max-w-max mx-auto relative">
@@ -284,8 +280,12 @@ bg-no-repeat bg-[length:90%_auto] bg-center ">
             <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
             <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
             <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
+
         </ul>
+        
     </div>
+
+
 
     <script src="./script.js"></script>
 </body>
