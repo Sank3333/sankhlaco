@@ -1,11 +1,15 @@
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100px;
-  position: relative;
-  margin: auto;
+/* Apply sans-serif to everything by default */
+body {
+  font-family: sans-serif;
 }
+
+/* Use Georgia only for h1 and h2 */
+h1, h2 {
+  font-family: Georgia, serif;
+}
+
 
 /* Hide the images by default */
 .mySlides {
