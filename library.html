@@ -3,54 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sankhla Consultants Profile</title>
+    <title>Sankhla Consultants</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./tailwind.config.js"></script>
 </head>
-<body class="overflow-x-hidden bg-linear-to-r/longer from-indigo-50 to-teal-50">
+<body class="overflow-x-hidden bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">
 
-    <nav class="w-full font-semibold fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px[8%] py-3 flex items-center justify-between z-50">
        <a href="index.html" class="flex items-center gap-0">
         <img src="./images/logo.png" alt="Logo" class="w-14 cursor-pointer mr-3">
-        <h1 class="sm:text-2xl text-sky-500">MS SANKHLA & CO.</h1>
+        <h1 class="text-2xl text-sky-500">MS SANKHLA & CO.</h1>
        </a>
         <ul class="hidden md:flex items-center text-blue-800 gap-5 lg:gap-9 rounded-full px-11 py-3 bg-white shadow-sm bg-opacity-50">
-            <li ><a href="index.html">Home</a></li> 
-            <li ><a href="about.html">About </a></li>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About </a></li>
             <li><a href="services.html">Services</a></li>
             <li class="text-blue-500"><a href="library.html">Library</a></li>
-            <li ><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
         </ul>
         
-        <div class="flex items-center ms-28 gap-8">
+        <div class="flex items-center gap-8">
        
          <a href="https://www.sankhlaconsultants.in/support/" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full 
-         ml-4 hover:bg-pink-50"> Client Login</a>
+         ml-4 "> Client Login</a>
 
          <button class="block md:hidden ml-3" onclick="openMenu()"> 
-             <img src="./images/menu-black.png" alt="" class="w-8">
+             <img src="./images/menu-black.png" alt="" class="w-6">
          </button>
 
         </div>
 <!----------------------mobile menu--------------------->
         <ul id="sideMenu"class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
         -right-64 top-0 bottom-0 w-64 z-50 h-screen transition text-blue-800 duration-500 
-       bg-linear-to-tl from-green-50 via-purple-50 to-pink-50 inset-shadow-sm">
+        bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">
 
           <div class="absolute right-6 top-6" onclick="closeMenu()">
-            <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
+            <img src="./images/close-black.png" alt="" class="w-5
+            cursor-pointer">
           </div>
 
-            <li ><a href="index.html" onclick="closeMenu()">Home</a></li> 
+            <li class="text-blue-500"><a href="index.html" onclick="closeMenu()">Home</a></li> 
             <li><a href="about.html" onclick="closeMenu()">About</a></li>
             <li><a href="services.html" onclick="closeMenu()">Services</a></li>
-            <li class="text-blue-500"><a href="library.html" onclick="closeMenu()">Library</a></li>
-            <li ><a href="contact.html" onclick="closeMenu()">Contact</a></li>
-            <li><a href="team.html">Team</a></li>
+            <li class="text-blue-500><a href="library.html" onclick="closeMenu()">Library</a></li>
+            <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            <li "><a href="team.html">Team</a></li>
             <br>
             
             <div class="align-middle text-center">
-                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">Client Login </a>
+                 <a href="https://www.sankhlaconsultants.in/support/" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50 ">Client Login </a>
                  <p class="font-semibold text-2xl mt-7">Sankhla Consultants</p>
                  <p class="mb-7">Plot No. 1984, Sec.-45, Gurgaon-122003, Haryana, India</p>
                  <a href="tel:+917809900200" class="font-semibold border rounded-full border-double px-7 py-2 bg-linear-to-tl from-green-50 via-purple-50 to-pink-50">Call Us Now! </a>
@@ -66,13 +68,15 @@
             </div>
         </ul>
     </nav>
-
-<!-------------Our Services- --------------->
-
-
-
+<!---------------header------------------>
+<div class="w-11/12 max-w-3xl text-center mx-auto items-center pt-33 py-11 gap-4">
     
-<p> Labour Laws Acts Library</p>
+    <h1 class="text-3xl ">Labour Laws Library Acts</h1>
+    <p class="">We offer knowledge-driven, tech-enabled Labour, Industrial, and Financial Compliance Solutions across India. Our domain-specific services are crafted to assist businesses with the necessary licenses, registrations, and 
+        compliance management under various domains.</p>     
+ </div>
+
+
 <!---------------footer------------------>
     <div class=" border-gray-400  border-t-2 sm:px-11 mx-[10%] py-2 text-center mt-33 flex sm:flex items-end justify-between my-2 ">
         <div class="w-max flex flex-col items-start gap-2 underline">
@@ -93,15 +97,20 @@
 
     <div class=" border-gray-400 border-t-2 mx-[10%] py-3 text-center sm:flex items-center justify-between ">
         <p class="py-3">Copy right 2025 Sankhla Consultants. All rights reserved</p>
-        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full 
-                     bg-purple-100  border-double px-5 py-2 hover:bg-pink-50 ">Employee Login </a>
+        <a href="https://www.sankhlaconsultants.in/support/scp/login.php" class="font-semibold border rounded-full shadow-sm
+                     bg-purple-100    border-double px-5 py-2  ">Employee Login </a>
         <ul class="py-3 flex items-center gap-9 justify-center sm:mt-0">
             <li> <a href="https://www.linkedin.com/company/sankhla-consultants/">Linkedin</a></li>
             <li> <a href="https://www.instagram.com/sankhlacorp/">Instagram</a></li>
             <li> <a href="https://www.facebook.com/profile.php?id=61559170146779">Facebook</a></li>
             <li> <a href="https://wa.me/+917809900200">WhatsApp</a></li>
+
         </ul>
+        
     </div>
+
+
     <script src="./script.js"></script>
 </body>
+
 </html>
