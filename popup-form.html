@@ -1,0 +1,97 @@
+<!-- popup-form.html -->
+ <style>/* Global Button for Trigger (Optional Styling) */
+#openFormBtn {
+    padding: 10px 20px;
+    background: #9577b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Full-Screen Overlay with Blur */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Content Centered */
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 700px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Optional Close Button */
+#closePopupBtn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+</style>
+<div id="modal" class="fixed inset-0 backdrop-blur-sm hidden items-center justify-center z-50">
+  <div class="bg-white w-full max-w-4xl rounded-lg p-8 mx-2 shadow-lg relative overflow-y-auto max-h-[90vh]">
+    <button onclick="closeModal()" class="absolute top-3 right-4 text-2xl text-gray-500 hover:text-black">&times;</button>
+    <h2 class="text-2xl font-semibold text-center mb-2">Business Enquiry Form</h2>
+    <p class="text-center text-sm text-gray-500 mb-6">
+      Please drop in your details and we will get in touch with you shortly </p>
+
+    <form id="enquiryForm" class="space-y-2">
+      <div class="grid md:grid-cols-3 gap-3">
+        <input type="text" required placeholder="Full Name" class="col-span-1 border px-3 py-2 rounded-md" />
+        <input type="email" required placeholder="Company Email ID" class="col-span-1 border px-3 py-2 rounded-md" />
+        <input type="text" required placeholder="Company Name" class="col-span-1 border px-3 py-2 rounded-md" />
+        <input type="tel" required placeholder="Contact No." class="col-span-1 border px-3 py-2 rounded-md" />
+        <input type="text" placeholder="Location" class="col-span-1 border px-3 py-2 rounded-md" />
+        
+        <select required class="col-span-1 border px-3 py-2 rounded-md">
+          <option value="">Select Enquiry Type</option>
+          <option value="services">Compliance Services</option>
+          <option value="products">Registration</option>
+        </select>
+      </div>
+
+      <textarea required placeholder="Your Message" class="w-full border px-3 py-2 rounded-md h-28 mt-4"></textarea>
+      
+      <div class="text-center mt-4">
+        <button type="submit" class="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-8 py-2 rounded-full">
+          Submit
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<Script>// popup.js
+
+function openModal() {
+  const modal = document.getElementById('modal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  if (modal) {
+    modal.classList.remove('flex');
+    modal.classList.add('hidden');
+  }
+}
+
+</Script>
